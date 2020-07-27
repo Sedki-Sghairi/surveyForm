@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "css/Survey.css">
+    <title>Survey form</title>
+</head>
+<body>
+    <h1 id = "title">Covid-19 Survey Form</h1>
+    <p id="description">Passengers landing in Tunisia will have to fill up this Form before landing</p>
+    <form "survey-form">
+        <br>
+        <label id = "name-label" for = "name">Full Name:</label><br>
+        <input id = "name" name ="name" type = "text" placeholder="first-name last-name"><br>
+        <br>
+        <label id = "email-label" for = "email">Email:</label><br>
+        <input id = "email" name ="email" type = "email" placeholder="example@gmail.com"><br>
+        <br>
+        <label id = "number-label" for = "number">Age</label><br>
+        <input id = "number" name = "number" type = "number" min = "0" max = "200" placeholder="00"><br>
+        <br>
+        <label for = "dropdown">Select Gender:</label>
+        <select id = "dropdown">
+            <option name = "male">Male</option>
+            <option name = "female" >Female</option>
+            <option name = "unknown">I'd rather not say</option>
+        </select>
+        <br><br>
+        <label>Have you been to the united states recently?</label>
+
+        <input name = "yes" id = "yes" type = "radio" value = "Yes">YES
+        <input name = "no" id = "no" type = "radio" value = "No">NO
+        <br><br>
+        <p>Perpose of travel:</p>
+        <input type = "checkbox" id = "goal" name="goal" value = "purpose">
+        <label for = "goal">Tourism</label><br>
+        <input type = "checkbox" id = "goal1" name="goal1" value = "purpose1">
+        <label for = "goal1">Business</label><br>
+        <input type = "checkbox" id = "goal2" name="goal2" value = "purpose2">
+        <label for = "goal2">Education</label><br>
+        <input type = "checkbox" id = "goal3" name="goal3" value = "purpose3">
+        <label for = "goal3">Other</label><br>
+        <label for = "review"><small>If you selected "other", please specify below:</small></label><br>
+        <textarea id="review" name="review" rows = "2" cols = "80"></textarea><br>
+        <input type = "submit" value = "submit">
+        
+    </form>
+</body>
+</html>
